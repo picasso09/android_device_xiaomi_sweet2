@@ -15,6 +15,17 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Define rear camera specs (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 108+8+2+2  # Example: 50MP + 48MP
+# Define front camera specs
+AXION_CAMERA_FRONT_INFO := 16
+# Maintainer name (use "_" for spaces, e.g., "rmp_22" → "rmp 22" in UI)
+AXION_MAINTAINER := ラーマドᯓᡣ𐭩
+# Processor name (use "_" for spaces)
+AXION_PROCESSOR := Snapdragon_732G
+PRODUCT_NO_CAMERA := false
+BYPASS_CHARGE_SUPPORTED := true
+
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := sweet2
 PRODUCT_MANUFACTURER := Xiaomi
